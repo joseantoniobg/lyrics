@@ -1,0 +1,46 @@
+@import "mixins";
+@import "animations";
+
+:root {
+  --grape: rgb(164, 119, 247);
+  --history-grape: rgb(64, 21, 145);
+  --history-line: rgba(143, 75, 231, 0.5);
+  --history-line-solid: rgb(143, 75, 231);
+}
+
+$bp-huge: 112.5em;
+$bp-big: 75em;
+$bp-medium: 75em;
+$bp-small: 56.25em;
+$bp-tiny: 37.5em;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  overflow: hidden;
+
+  @include responsive($bp-huge) {
+    font-size: 57%;
+  }
+
+  @include responsive($bp-big) {
+    font-size: 52%;
+  }
+
+  @include responsive($bp-medium) {
+    font-size: 45.5%;
+  }
+
+  @include responsive($bp-small) {
+    font-size: 35%;
+  }
+
+  @include responsive($bp-tiny) {
+    font-size: 30.5%;
+  }
+}

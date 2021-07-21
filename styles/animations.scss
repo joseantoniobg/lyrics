@@ -1,0 +1,44 @@
+@keyframes goUp {
+  0% {
+    transform: translatey(70vh);
+    color: rgb(random(255), random(255), random(255));
+  }
+  50% {
+    color: #fff;
+    transform: translatey(5);
+  }
+  100% {
+    color: rgb(random(255), random(255), random(255));
+    transform: translatey(-70vh);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translatey(0);
+    color: rgb(random(255), random(255), random(255));
+  }
+
+  40% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translatey(0);
+    color: #fff;
+  }
+
+  60% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translatey(0);
+    color: rgb(random(255), random(255), random(255));
+  }
+}

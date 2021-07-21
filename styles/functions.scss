@@ -1,0 +1,6 @@
+@function anim($position, $initialDelay) {
+  $duration: 2.5s - $position * 0.3;
+  $delay: $initialDelay + $position * 0.2 + 0s;
+
+  @return goUp $duration $delay cubic-bezier(0, 0.66, 1, 0.34);
+}
